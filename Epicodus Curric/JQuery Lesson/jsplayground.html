@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
-		<link href="css/styles.css" rel="stylesheet" type="text/css" media="all">
+		<link href="css/styles2.css" rel="stylesheet" type="text/css" media="all">
 		<script src="js/jquery.js"></script>
 		<script src="js/scripts2.js"></script>
 		<title>JS Playground</title>
@@ -10,10 +10,21 @@
 	<body>
 		<div class="container">
 			<div class="headerimg jumbotron">
-				<h1>Welcome to testing jQuery on Kittens</h1>
-				<img src="http://placekitten.com/1200/250" height="250px" width="100%">
+				<div class="noexperiment">
+					<h1>Welcome to testing jQuery on Kittens</h1>
+					<p class="lead">On this site we will be performing all types of experiments on kittens using jQuery.
+					Sound terrible? Well they'll get clicked on, typed on, highlighted, and maybe even removed 
+					from the site!</p>
+					<p><a class="btn btn-primary btn-large show_header">Click here to begin the experimentation!</a></p>
+				</div>
+				<div id="experiment">
+					<h1>Welcome to the experiment!!!</h1>
+					<p class="lead">Be prepared for the most horrifying jQuery and Javascript code ever!!!</p>
+				</div>
 			</div>
-			
+			<div class="the_lab">
+				<img class="headerkitten" src="http://placekitten.com/1200/250" height="250px" width="100%">
+			</div>
 		</div>		
 	</body>
 
