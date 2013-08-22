@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
+		<link href="css/bootstrap-responsive.css" rel="stylesheet" type="text/css" media="all">
+		<link href="css/styles3.css" rel="stylesheet" type="text/css" media="all">
+		<script src="js/jquery.js"></script>
+		<script src="js/scripts3.js"></script>
+		<script src="js/bootstrap.js"></script>
+		<title>Athlete Test</title>
+	</head>
+	
+	<body>
+		<!--NAVBAR-->
+		<div class="navbar navbar-inverse">
+			<div class="navbar-inner">
+				<a class="btn btn-danger" data-toggle="collapse" data-target="#navigation">
+				  <i class="icon-align-justify"></i>
+				</a>
+				<a class="brand" href="#">Athlete Test</a>
+				<div class="nav-collapse collapse" id="navigation">
+					<ul class="nav collapse in" >
+						<li class="active"><a href="#">Home</a></li>
+						<li><a href="branching.html">Branching</a></li>
+						<li><a href="mas_branching.html">More Branching!</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		
+		<!--BEGIN ACTUAL CONTENT-->
+		
+		<div class="jumbotron masthead">
+			<div class="container">
+				<h1 class="test_headline">So you think you're an athlete?</h1>
+				<p>Fill out the form below and find out what sport <strong>YOU</strong> should be playing!</p>
+			</div>
+		</div>
+
+		<div class="container">
+			<div class="span6">
+				<h2>Welcome to the Athlete Test</h2>
+				<p class="lead">Please fill out all the information below to find out if you really are an athlete.</p>
+			</div>
+			
+			<form id="sports" class="span6">
+				<label for="name" class="label">First Name</label>
+				<input id="name" type="text" placeholder="First Name">
+				
+				<span class="help-block label">Pick you're height range</span>
+					<select id="height">
+						<option value="tall">6ft and above</option>
+						<option value="med">5ft - 6ft</option>
+						<option value="short">4ft - 5ft</option>
+					</select>
+					
+				<label for="weight" class="label">Weight</label>
+				<input id="weight" type="text" placeholder="Weight in pounds">
+				
+				<span class="help-block label">During my free time I like to:</span>
+					<select id="free">
+						<option value="fball">Smash fools</option> 
+						<option value="bball">Jump over fools</option>
+						<option value="couch">Surf...my T.V.</option>
+					</select>
+				
+				<button type="submit" class="btn btn-success butt">Find out what your are!</button>
+			</form>
+			
+			<div id="football_player" class="answer span6">
+				<h1>Football Player!</h1>
+				<p><span class="name"></span> you've got the height, weight, and manliness to smash on fools. So go put on your helmet and shoulder pads and get to work.</p> 
+				<img src="http://theultimatecollection.webs.com/20051023NFLGiantsPiercevsBroncosPutzier.jpg" alt="linebacker">
+			</div>
+			
+			<div id="basketball_player" class="answer span6">
+				<h1>Basketball Player!</h1>
+				<p><span class="name"></span> you've got the height, weight, and manliness to smash on fools. So go put on your helmet and shoulder pads and get to work.</p> 
+				<img src="http://i2.cdn.turner.com/si/dam/assets/130213172853-michael-jordan-05090020-single-image-cut.jpg" alt="M.J.">
+			</div>
+			
+			<div id="couch_bum" class="answer span6">
+				<h1>Yeeeeaaah, enjoy that couch.</h1>
+				<p>Listen, <span class="name"></span>, you absolute lard of laziness, lack of height or excessive weight is going to kill you. Get off your butt and get to running!</p> 
+				<img src="http://anonymouscollegegirl.files.wordpress.com/2012/06/couch-potato1.jpeg" alt="couch">
+			</div>
+		</div>
+	</body>
+</html>

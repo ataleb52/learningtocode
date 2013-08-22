@@ -1,0 +1,11 @@
+form label {
+	display: block;
+}
+
+.btn {
+	display: block;
+}
+
+#story {
+	display: none;
+}
