@@ -1,0 +1,7 @@
+.butt {
+	display: block;
+}
+
+#quote, #century {
+	display: none;
+}

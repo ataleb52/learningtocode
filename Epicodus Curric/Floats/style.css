@@ -1,0 +1,21 @@
+.sidebar {
+	float: right;
+	width: 20%;
+	background: #ccc;
+}
+
+.column p {
+	float: left;
+	width: 20%;
+}
+
+img {
+	width: 300px;
+}
+h2 {
+	float: right;
+}
+.inbox {
+	float: left;
+	width: 100px;
+}

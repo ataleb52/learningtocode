@@ -1,0 +1,31 @@
+.navbar {
+	margin-bottom: 0;
+	border-radius: 0;
+}
+.jumbotron {
+	background: #ccc;
+	margin-bottom: 0;
+	border-radius: 0;
+}
+
+.the_lab {
+	display: none;
+}
+
+
+#experiment {
+	display: none;
+}
+
+.minigames {
+	margin: 1em;
+	clear: both;
+}
+
+.game {
+	text-align: center;
+}
+
+#peekaboocat, #togglecat, #fadeincat, #slidetoggle_cat, #fadetoggle_cat, #slideup_cat {
+	display: none;
+}

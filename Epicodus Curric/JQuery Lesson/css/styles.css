@@ -1,0 +1,19 @@
+.box {
+	background: black;
+	height: 200px;
+	width: 300px;
+	clear: both;
+}
+
+#cat-showing {
+	display: none;
+}
+
+.clickable {
+	cursor: pointer;
+	color: #00088c;
+}
+
+.clickable:hover {
+	text-decoration: underline;
+}
