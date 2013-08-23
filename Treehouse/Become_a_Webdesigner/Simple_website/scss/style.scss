@@ -1,23 +1,28 @@
+$lightgreen: 		#4FB69F;
+$lightyellow: 		#faf3bc;
+
 body {
 	font-family: 'Nunito', sans-serif;
-	color: #faf3bc;
+	color: $lightyellow;
 	background: #420600 url('img/bg-texture.jpg') repeat;
 }
 
-ul.navbar {
-	float: right;
-	list-style: none;
-	margin: 7em 0 0 0;
+.navbar {
+	ul {
+		float: right;
+		list-style: none;
+		margin: 7em 0 0 0;
+		li {
+			float: left;
+			margin-right: 1.5em;
+		}
+	}
 }
 
-ul.navbar li {
-	float: left;
-	margin-right: 1.5em;
-}
 
 a {
 	text-decoration: none;
-	color: #4FB69F;
+	color: $lightgreen;
 }
 
 h1 {
@@ -31,24 +36,26 @@ h2 {
 }
 
 .butt {
-	color: #faf3bc;
-	background: #4fb69f;
+	color: $lightyellow;
+	background: $lightgreen;
 	padding: 1em;
 	border-radius: 2em;
 	text-transform: uppercase;
+	&:hover {
+		background: green;
+	}
 }
 
-.butt:hover {
-	background: green;
-}
 
 .intro {
 	margin: 3em 0 0 0;
 }
 
-.featured img, .fresh img {
-	border: 6px solid #4FB69F;
-	margin: 0 0 20px 0;
+.featured, .fresh {
+	img {
+		border: 6px solid $lightgreen;
+		margin: 0 0 20px 0;
+	}
 }
 
 .copyright {
