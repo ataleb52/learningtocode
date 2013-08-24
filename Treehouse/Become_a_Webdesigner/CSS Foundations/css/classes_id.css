@@ -1,0 +1,62 @@
+h1, h2, h3, h4, h5, h6 {
+  margin: 0; }
+
+body {
+  width: 800px;
+  margin: 1em auto; }
+  body #header {
+    background: #4169e1;
+    text-align: center;
+    color: white;
+    padding: 1.5em; }
+  body .main_content {
+    background: #ccc;
+    margin: 0;
+    padding: 1.5em;
+    font-size: 1.3em; }
+    body .main_content h1 {
+      font-size: 2em; }
+  body #footer {
+    background: #000;
+    color: #fff;
+    text-align: center;
+    padding: 1.5em; }
+
+/****LESSON CODE****/
+/*
+.container {
+	margin: auto;
+	width: 740px;
+}
+
+.global {
+	padding-top: 50px;
+	color: white;
+	text-align: center;
+	font-size: 24px;
+}
+
+.main-header {
+	height: 110px;
+	background: royalblue;
+	color: white;
+}
+
+#main-content {
+	padding: 20px;
+ 	height: 800px; 
+	background: lightgray;
+}
+
+#main-content p {
+	font-size: 21px;
+	line-height: 1.5;
+	margin-top: 32px;
+}
+
+.main-footer {
+	height: 100px;
+	background: #222;
+	color: white;
+}
+*/
