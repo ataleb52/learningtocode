@@ -1,0 +1,20 @@
+body {
+  width: 500px;
+  margin: auto;
+  font-family: sans-serif; }
+
+ul {
+  border: 2px dotted black;
+  list-style-position: inside; }
+  ul li {
+    font-size: 1.8em;
+    border-top: 2px solid blue; }
+
+ul li:nth-child(1) {
+  border: none; }
+
+ul li:last-child {
+  background: blue; }
+
+b:only-child {
+  background: red; }

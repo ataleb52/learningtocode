@@ -1,0 +1,24 @@
+.main_content {
+	width: 600px;
+	margin: auto;
+	font-family: sans-serif;
+	a {
+		color: red;
+		&:hover {
+			color: black;
+			background: blue;
+		}
+	}
+	input {
+		border: .3em solid #4682b4;
+		height: 3em;
+		width: 300px;
+		display: block;
+		margin: 1em 0;
+		&:focus {
+			background: tomato;
+			color: white;
+		}
+		
+	}
+}

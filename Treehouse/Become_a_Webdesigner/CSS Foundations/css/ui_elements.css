@@ -1,0 +1,40 @@
+:root {
+  background: #e8f3f8;
+  font: 1em/1.5 sans-serif; }
+
+form {
+  margin: 50px auto;
+  width: 320px;
+  color: steelblue; }
+
+input {
+  padding: 10px;
+  border-radius: 5px;
+  font-size: inherit; }
+
+input[type*="text"] {
+  width: 100%;
+  border: 2px solid steelblue;
+  display: block;
+  margin-bottom: 1em; }
+
+input[type*="radio"] {
+  margin: 0 10px; }
+
+input[type^="submit"] {
+  width: 344px;
+  height: 50px;
+  background: steelblue;
+  color: white;
+  border: none;
+  margin: 10px 0 0 0;
+  cursor: pointer; }
+
+input[type="text"]:enabled {
+  background: #fcfbcc; }
+
+:disabled {
+  background: black; }
+
+input[type*="radio"]:checked + label {
+  background: tomato; }
