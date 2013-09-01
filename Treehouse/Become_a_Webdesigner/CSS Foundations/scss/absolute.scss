@@ -1,0 +1,53 @@
+body {
+	background: black;
+	width: 800px;
+	margin: auto;
+	color: white;
+	font-family: sans-serif;
+}
+
+h1 {
+	margin-top: 1em;
+	border-bottom: 2px dotted white;
+	padding: 1em 0 .9em 0;
+}
+
+div {
+	width: 100px;
+	margin: .7em 0;
+	padding: 1em;
+	font-size: 1.2em;
+	color: black;
+	text-align: center;
+}
+
+.cm {
+	background: #d93d37;
+	width: 20cm;
+}
+
+.mm {
+	background: #e2e2e2;
+	width: 200mm;
+}
+
+.in {
+	background: #467f77;
+	width: 7.9in;
+}
+
+.pi {
+	background: #45c3ae;
+	width: 47.5pc;
+}
+
+.pt {
+	background: #fff6ad;
+	width: 570pt;
+}
+
+.px {
+	background: #e0cd95;
+	width: 760px;
+}
+
