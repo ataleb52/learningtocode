@@ -66,7 +66,14 @@ body {
 			margin-top: 1em;
 			text-align: justify;
 			float: left;
-			text-indent: 50px;
+			padding: 1em;
+			img {
+				width: 100%;
+				margin: 0 auto;
+			}
+			p {
+				text-indent: 50px;
+			}
 			a {
 				color: red;
 				float: right;

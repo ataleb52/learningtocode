@@ -50,7 +50,12 @@ body {
       margin-top: 1em;
       text-align: justify;
       float: left;
-      text-indent: 50px; }
+      padding: 1em; }
+      .row .col-lg-3 .post_box img {
+        width: 100%;
+        margin: 0 auto; }
+      .row .col-lg-3 .post_box p {
+        text-indent: 50px; }
       .row .col-lg-3 .post_box a {
         color: red;
         float: right; }
