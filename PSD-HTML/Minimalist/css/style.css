@@ -9,15 +9,23 @@ Author URI: http://www.ahmadtaleb.com
 ******************************************************************/
 /******COLORS******/
 body {
-  background: #ada6a0; }
+  background: #ada6a0;
+  font-family: 'Kameron', serif; }
 
 #logo {
-  text-align: center; }
+  text-align: center;
+  font-size: 6em;
+  margin-top: .25em;
+  color: #d0ccc9; }
 
 .navbar {
   background: white;
   border-radius: 0;
-  margin: 1em 0; }
+  margin-top: 1em;
+  font-size: 1.5em;
+  box-shadow: 0px 0px 10px -2px #000; }
+  .navbar .navbar-collapse {
+    padding-left: 30px; }
 
 /* CUSTOMIZE THE CAROUSEL
 -------------------------------------------------- */
@@ -29,7 +37,9 @@ body {
 
 .carousel {
   padding: 1em;
-  background: white; }
+  background: white;
+  box-shadow: 0px 0px 10px -2px #000;
+  margin-bottom: 20px; }
 
 .carousel-inner > .item > img {
   position: absolute;
@@ -47,15 +57,54 @@ body {
     padding-left: 0; }
     .row .col-lg-3 .post_box {
       background: white;
-      margin-top: 1em;
+      margin-bottom: 20px;
       text-align: justify;
       float: left;
-      padding: 1em; }
+      padding: 1em;
+      box-shadow: 0px 0px 10px -2px #000; }
       .row .col-lg-3 .post_box img {
         width: 100%;
         margin: 0 auto; }
       .row .col-lg-3 .post_box p {
-        text-indent: 50px; }
+        text-indent: 50px;
+        margin-top: 1.5em; }
       .row .col-lg-3 .post_box a {
-        color: red;
+        color: black;
+        text-decoration: underline;
         float: right; }
+
+.intro {
+  background: white;
+  margin-bottom: 20px;
+  padding: 1em;
+  box-shadow: 0px 0px 10px -2px #000; }
+  .intro .pic_box {
+    float: left; }
+    .intro .pic_box img {
+      width: 100%;
+      padding: 0 .5em .5em 0; }
+  .intro .col-lg-3 {
+    padding-left: 0; }
+    .intro .col-lg-3 .col-lg-6 {
+      padding: 0; }
+  .intro .intro_text h2 {
+    font-family: 'Kameron', serif;
+    margin-top: 0; }
+  .intro .intro_text p {
+    text-indent: 50px;
+    text-align: justify; }
+  .intro .intro_text a {
+    color: black;
+    text-decoration: underline;
+    float: right; }
+
+.footer {
+  background: white;
+  margin-bottom: 20px;
+  box-shadow: 0px 0px 10px -2px #000;
+  padding: 1em;
+  font-family: sans-serif; }
+  .footer ul li {
+    float: left;
+    list-style: none;
+    margin: 0 1em 0 0; }

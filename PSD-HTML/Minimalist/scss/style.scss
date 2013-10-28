@@ -15,16 +15,26 @@ $gray:	#ada6a0;
 
 body {
 	background: $gray;
+	font-family: 'Kameron', serif;
 }
 
 #logo {
 	text-align: center;
+	font-size: 6em;
+	margin-top: .25em;
+	color: lighten( $gray, 15%);
 }
 
 .navbar {
 	background: white;
 	border-radius: 0;
-	margin: 1em 0;
+	margin-top: 1em;
+	font-size: 1.5em;
+	box-shadow: 0px 0px 10px -2px #000;
+	.navbar-collapse {
+		padding-left: 30px;
+	}
+	
 }
 
 
@@ -42,6 +52,8 @@ body {
 .carousel {
 	padding: 1em;
 	background: white;
+	box-shadow: 0px 0px 10px -2px #000;
+	margin-bottom: 20px;
 	
 }
 .carousel-inner > .item > img {
@@ -63,21 +75,75 @@ body {
 		padding-left: 0;
 		.post_box {
 			background: white;
-			margin-top: 1em;
+			margin-bottom: 20px;
 			text-align: justify;
 			float: left;
 			padding: 1em;
+			box-shadow: 0px 0px 10px -2px #000;
 			img {
 				width: 100%;
 				margin: 0 auto;
 			}
 			p {
 				text-indent: 50px;
+				margin-top: 1.5em;
 			}
 			a {
-				color: red;
+				color: black;
+				text-decoration: underline;
 				float: right;
 			}
+		}
+	}
+}
+
+.intro {
+	background: white;
+	margin-bottom: 20px;
+	padding: 1em;
+	box-shadow: 0px 0px 10px -2px #000;
+	.pic_box {
+		float: left;
+		img {
+			width: 100%;
+			padding: 0 .5em .5em 0;
+		}
+	}
+	.col-lg-3 {
+		padding-left: 0;
+		.col-lg-6 {
+			padding: 0;
+		}
+	}
+	.intro_text {
+		h2 {
+			font-family: 'Kameron', serif;
+			margin-top: 0;
+		}
+		p {
+			text-indent: 50px;
+			text-align: justify;
+		}
+		a {
+			color: black;
+			text-decoration: underline;
+			float: right;
+		}
+	}
+	
+}
+
+.footer {
+	background: white;
+	margin-bottom: 20px;
+	box-shadow: 0px 0px 10px -2px #000;
+	padding: 1em;
+	font-family: sans-serif;
+	ul {
+		li {
+			float: left;
+			list-style: none;
+			margin: 0 1em 0 0;
 		}
 	}
 }
