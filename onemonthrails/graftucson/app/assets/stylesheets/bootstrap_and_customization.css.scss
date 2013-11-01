@@ -1,0 +1,42 @@
+@import url(http://fonts.googleapis.com/css?family=Joti+One);
+@import url(http://fonts.googleapis.com/css?family=Lato);
+
+$body-bg: white;
+$font-family-sans-serif: 'Lato', sans-serif;
+$navbar-inverse-bg: #ecf0f1;
+$navbar-inverse-link-color: black;
+$brand-primary: #e74c3c;
+@import 'bootstrap';
+.navbar {
+	margin-bottom: 0;
+}
+
+.header {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  background-image: url(image-path('graf.jpg')); 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.jumbotron {
+	background: none;
+	margin-bottom: 0;
+	color: black;
+	padding-right: 0;
+	padding-left: 0;
+
+}
+
+.header_text {
+	background: rgba(250, 245, 249, .4);
+	padding: 1em;
+	border-radius: 5px;
+	text-align: center;
+	h1, h2 {
+		font-family: 'Joti One', cursive;
+	}
+}
