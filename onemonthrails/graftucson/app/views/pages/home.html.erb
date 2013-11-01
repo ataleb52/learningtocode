@@ -2,12 +2,16 @@
     <div id="top" class="header">
       <div class="vert-text jumbotron container">
         <div class="header_text">
-	        <h1>Arizona Graffiti</h1>
+	        <h1>Arizona Graffitis</h1>
 	        <h2>Highlighting the coolest graffiti in Arizona</h2>
-	        <p>
-	        	<%= link_to "Log in", "#", class: "btn btn-default btn-lg" %>
-	        	<%= link_to "Sign up", "#", class: "btn btn-primary btn-lg" %>
-	        </p>
+	        <% if user_signed_in? %>
+            Hi user!
+          <% else %>
+            <p>
+  	        	<%= link_to "Log in", new_user_session_path, class: "btn btn-default btn-lg" %>
+              <%= link_to "Sign up", new_user_registration_path, class: "btn btn-primary btn-lg" %>
+  	        </p>
+          <% end %>
     	</div>
       </div>
     </div>
