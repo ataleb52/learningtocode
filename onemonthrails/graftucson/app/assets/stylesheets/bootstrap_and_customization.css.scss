@@ -40,3 +40,30 @@ $brand-primary: #e74c3c;
 		font-family: 'Joti One', cursive;
 	}
 }
+
+.panel {
+	 	background-image: url(image-path('graf.jpg'));
+	.panel_back {
+		background: rgba(250, 245, 249, .4);
+		.panel-body {
+			color: black;
+			font-size: 1.5em;
+				form {
+					.btn {
+					font-size: 1em;
+				}
+			}
+		}
+		.panel-heading {
+			background: none;
+			color: #f55505;
+			font-size: 2em;
+		}
+		.panel-footer {
+			background: none;
+			color: #f55505;
+			font-size: 1.5em;
+			border: none;
+		}
+	}
+}
