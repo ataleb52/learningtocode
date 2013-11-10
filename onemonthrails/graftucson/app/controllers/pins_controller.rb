@@ -1,6 +1,7 @@
 class PinsController < ApplicationController
   before_action :set_pin, only: [:show, :edit, :update, :destroy]
-
+  before_action :authenticate_user!, except: [:index, :show]
+  before_action :correct_user, only: [:edit, :update, :destroy]
   def index
     @pins = Pin.all
   end
@@ -41,6 +42,11 @@ class PinsController < ApplicationController
 
     def set_pin
       @pin = Pin.find(params[:id])
+    end
+
+    def correct_user
+      @pin = current_user.pins.find_by(id: params[:id])
+      redirect_to pins_path, notice: "Not authorized to edit this tag" if @pin.nil?
     end
 
     def pin_params
