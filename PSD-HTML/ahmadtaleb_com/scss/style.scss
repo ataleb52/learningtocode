@@ -1,0 +1,146 @@
+/******************************************************************
+Site Name: Ahmad Taleb
+Description: Drew up and coded a design for my personal site. If your reading this here code, welcome to my personal site! I've used Bootstrap to help out with building it and a some jQuery to build some of the other stuff. Look around and tell me what you think.
+Author: Ahmad Taleb
+Author URI: http://www.ahmadtaleb.com
+******************************************************************/
+.intro {
+	display: table;
+	height: 100%;
+	width: 100%;
+	position: relative;
+	background: url(../img/iback.jpg) no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	.intro_cont {
+		margin-top: 100px;
+		text-align: center;
+		img {
+			border-radius: 200px;
+			height: auto;
+			max-width: 100%;
+			margin-bottom: 20px;
+		}
+		.social_links {
+			a {
+				text-decoration: none;
+				margin: 0 10px;
+			}
+		}
+		.intro_text {
+			background: rgba(250, 245, 249, .4);
+			text-align: justify;
+			padding: .5em;
+			margin: 20px 0;
+			p {
+				margin-bottom: 0;
+			}
+			
+		}
+	}
+}
+
+.portfolio {
+	.categs {
+		margin: 0 auto;
+		.cat {
+			background: black;
+			color: white;
+			float: left;
+			margin: 20px 100px;
+			padding: 6em;
+			border-radius: 300px;
+		}
+	}
+}
+
+
+
+/*
+* MIXITUP Boilerplate Template Stylesheet
+*/
+.mixitup {
+	background: #e74c3c;
+	ul {
+		padding: 0;
+	}
+	.controls {
+		clear: both;
+		width: 640px;
+		li {
+			cursor: pointer;
+		}
+		p {
+			clear: both;
+			cursor: pointer;
+		}
+		li.active {
+			font-weight: 700;
+		}
+	}
+	.filter {
+		float: left;
+		list-style: none;
+		margin: 20px;
+	}
+	#Grid {
+		width: 100%;
+		text-align: justify;
+		clear: both;
+		&:after {
+			content: '';
+			display: inline-block;
+			width: 100%;
+		}
+		.mix {
+			display: none;
+			opacity: 0;
+			width: 350px;
+			height: 200px;
+			vertical-align: top;
+			margin-bottom: 20px;
+			background: #ccc;
+			color: #fff;
+			
+			font-size: 16px;
+			text-align: center;
+			line-height: 200px;
+		}
+		.gap {
+			display: inline-block;
+			width: 200px;
+		}
+	}
+}
+
+
+
+
+
+.blog {
+	background: #3498db;
+	.post {
+	background: white;
+		margin: 10px 0;
+		img {
+			height: 400px;
+			padding: 0;
+		}
+		.blog_text {
+			background: blue;
+		}
+		
+	}
+}
+
+.contact {
+	text-align: center;
+	h1,h3 {
+	}
+}
+
+
+
+
