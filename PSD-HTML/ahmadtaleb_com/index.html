@@ -7,7 +7,7 @@
 		<title>Ahmad Taleb</title>	
 	</header>
 
-	<body class="">
+	<body>
 		<!---------- NAVIGATION BAR ----------->
 		<div class="container">
 			<nav class="navbar navbar-inverse navbar-fixed-top bs-docs-nav" role="banner">
@@ -57,31 +57,88 @@
 				</div>
 			</div>
 		</div>
-		<!---------- PORTFOLIO ----------->
-		<div class="mixitup">
-			<div class="container">
-				<div class="controls">	
-					<h3>Work</h3>
+
+		
+		
+		
+		
+		
+		<section id="List" class="books">
+		<div class="block container">
+			<header>
+				<div class="sorting">
 					<ul>
-						<li class="filter" data-filter="design">Design</li>
-						<li class="filter" data-filter="web">Web</li>
-						<li class="filter" data-filter="idea">Ideas</li>
-						<!--<li class="filter" data-filter="category_3 category_1">Category 1 &amp; 3</li> -->
+						<li class="sort" data-sort="data-title" data-order="desc"><a class="btn" title="Title">Title</a></li>
+						<li class="sort" data-sort="data-author" data-order="desc"><a class="btn" title="Author">Author</a></li>
+						<li class="sort" data-sort="data-date" data-order="asc"><a class="btn" title="Recently Added">Recently Added</a></li>
 					</ul>
-					<p class="filter" data-filter="all">Show All</p>
-				</div>		
-				<!-- GRID -->
-				<ul id="Grid">
-					<li class="mix design" data-cat="design">DD</li>
-					<li class="mix design" data-cat="design">DD</li>
-					<li class="mix web" data-cat="web">WWW</li>
-					<li class="mix web" data-cat="web">WWWW</li>
-					<li class="mix idea" data-cat="idea">ID</li>
-					<li class="mix idea" data-cat="idea">ID</li>
-					<li class="gap"></li> <!-- "gap" elements fill in the gaps in justified grid -->
-				</ul>
+				</div>
+			</header>
+			<div class="list_main">
+				<div class="list_wrapper">
+					<article class="mix" data-title="Decoding Your 21st Century Daughter" data-author="Helen Wright" data-date="20130501174723">
+						<a href="#" class="item" title="Decoding Your 21st Century Daughter">
+							<img src="https://www.embooks.com/images/resizer_cache/236483575106f044bdce113c2b4d0f00dfc7492a.jpg" alt="Decoding Your 21st Century Daughter" />
+							<div class="hover"><span>Learn More</span></div>
+						</a>
+					</article>
+					
+					<article class="mix" data-title="Diana&#8217;s Baby" data-author="Angela Levin" data-date="20130501185312">
+						<a href="#" class="item" title="Diana&#8217;s Baby">
+							<img src="https://www.embooks.com/images/resizer_cache/1fb4db30899f094064e1b1b8496cf0d209b11978.jpg" alt="Diana&#8217;s Baby" />
+							<div class="hover"><span>Learn More</span></div>
+						</a>
+					</article>
+					
+					<article class="mix" data-title="Guardian Angel" data-author="Melanie Phillips" data-date="20130501161913">
+						<a href="#" class="item" title="Guardian Angel">
+							<img src="https://www.embooks.com/images/resizer_cache/c47aa332d80e41d09600993c63454c12bafdf744.jpg" alt="Guardian Angel" />
+							<div class="hover"><span>Learn More</span></div>
+						</a>
+					</article>
+					
+					<article class="mix" data-title="Islamophilia" data-author="Douglas Murray" data-date="20130530204602">
+						<a href="#" class="item" title="Islamophilia">
+							<img src="https://www.embooks.com/images/resizer_cache/9304dfbd425c8e281994310fde6d6ec567ee2c0c.png" alt="Islamophilia" />
+							<div class="hover"><span>Learn More</span></div>
+						</a>
+					</article>
+					
+					<article class="mix" data-title="J. Robert Oppenheimer, For Example" data-author="Frederic Raphael" data-date="20130501180550">
+						<a href="#" class="item" title="J. Robert Oppenheimer, For Example">
+							<img src="https://www.embooks.com/images/resizer_cache/1845c36e6adb03d6d83712ae966d50fe6caddebf.jpg" alt="J. Robert Oppenheimer, For Example" />
+							<div class="hover"><span>Learn More</span></div>
+						</a>
+					</article>
+					
+					<article class="mix" data-title="SNAP" data-author="James Le Fanu" data-date="20130501190317">
+						<a href="#" class="item" title="SNAP">
+							<img src="https://www.embooks.com/images/resizer_cache/a9a7e6d6846e82ed1981c619254af392ed1e7743.jpg" alt="SNAP" />
+							<div class="hover"><span>Learn More</span></div>
+						</a>
+					</article>
+					
+					<div class="placeholder"></div>
+					<div class="placeholder"></div>
+				</div>
 			</div>
 		</div>
+	</section>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
 		<!---------- BLOG ----------->
 		<div class="blog">
 			<div class="container">
@@ -141,6 +198,9 @@
 		<script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
 		<script src="js/jquery.mixitup.min.js"></script>
 		<script src="js/bootstrap.js"></script>
+		<script type="text/javascript" src="js/jquery.bxslider.min.js"></script>
+	<script type="text/javascript" src="js/jqmodal.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
 		<script type="text/javascript">
 			// INSTANTIATE MIXITUP
 			$(function(){
