@@ -42,28 +42,10 @@ Author URI: http://www.ahmadtaleb.com
 	}
 }
 
-.portfolio {
-	.categs {
-		margin: 0 auto;
-		.cat {
-			background: black;
-			color: white;
-			float: left;
-			margin: 20px 100px;
-			padding: 6em;
-			border-radius: 300px;
-		}
-	}
-}
-
-
-
-
-
 .blog {
 	background: #3498db;
 	.post {
-	background: white;
+		background: white;
 		margin: 10px 0;
 		img {
 			height: 400px;
@@ -86,22 +68,10 @@ Author URI: http://www.ahmadtaleb.com
 I BASICALLY RIPPED OUT WHAT THEY HAD AND ALTERED IT TO SOMETHING I NEEDED. SO WHILE THE CODE ISN'T EXACTLY WHAT
 THEY HAVE IT IS ORIGINALLY THEIRS.-----*/
 
-
-/*-----BUTTON CSS-----*/
-
 .btn{
 	font-size: 16px;
 	background-color: black;
 	color: white;
-}
-
-
-/*-----BLOCK CSS-----*/
-
-.block{
-	width: 100%;
-	margin: 0 auto;
-	padding: 0 10px;
 }
 
 .placeholder{
@@ -111,147 +81,105 @@ THEY HAVE IT IS ORIGINALLY THEIRS.-----*/
 	display: inline-block;
 }
 
-/*-----LIST CSS-----*/
+/*-----portfolio CSS-----*/
 
-#List{
+#portfolio{
 	width: 100%;
 	padding-top: 20px;
+	background: #e74c3c;
 	header {
 		margin-bottom: 20px;
 		overflow: hidden;
-		.sorting {
-			font-size: 0.1px;
+		.filtering {
 			text-align: center;
-			li {
-				display: inline-block;
-				margin: 0 0 0 4px;
+			ul {
+				padding-left: 0;
+				li {
+					display: inline-block;
+					.btn {
+						border-radius: 250px;	
+						font-size: 25px;
+						height: 100px;
+						width: 100px;
+						text-align: center;
+						line-height: 80px;
+					}
+				}
 			}
 		}	
 	}
+	.portfolio_wrapper{
+		text-align: justify;
+		&:after {
+			content: '';
+			width: 100%;
+			display: inline-block;
+		}
+	}
+	.portfolio_main {
+		article {
+		vertical-align: top;
+		width: 31.33%;
+			.item {
+				width: 100%;
+				margin: 0 0 20px;
+				display: inline-block;
+				position: relative;
+				&:hover {
+					.hover {
+						opacity: 1;
+						display: block; /* IE8 */
+					}
+				}
+				.hover {
+					color: #FFF;
+					font-size: 28px;
+					font-weight: 600;
+					text-transform: uppercase;
+					width: 100%;
+					height: 100%;
+					background: rgba(250, 245, 249, .5);
+					position: absolute;
+					top: 0;
+					left: 0;
+					opacity: 0;
+					display: none\9; /* IE8 */
+						span {
+							margin: -14px 0 0 -92px;
+							position: absolute;
+							top: 50%;
+							left: 50%;
+						}
+				}
+				img {
+					width: 100%;
+					height: auto;
+				}
+			}
+		}
+	}
 }
 
-#List .list_main{
-	margin: 0 0 20px;
-	padding: 0 5px;
-	overflow: hidden;
-}
-
-#List .list_wrapper{
-	font-size: 0.1px;
-	text-align: justify;
-	min-width: 100%;
-}
-
-#List .list_wrapper:after{
-	content: '';
-	width: 100%;
-	display: inline-block;
-}
-
-#List .list_main article{
-	text-align: left;
-	vertical-align: top;
-	width: 23%;
-	margin: 0 0 6%;
-	display: inline-block;
-}
-
-#List .list_main article .item{
-	width: 100%;
-	margin: 0 0 20px;
-	display: inline-block;
-	border-bottom: 4px solid #CCC;
-	overflow: hidden;
-	position: relative;
-}
-
-#List .list_main article .item:hover{
-	text-decoration: none;
-}
-
-#List.books .list_main article .item{
-	border-color: #F7E654;
-}
-
-#List.authors .list_main article .item{
-	border-color: #7DD1E1;
-}
-
-#List .list_main article .item img{
-	width: 100%;
-	height: auto;
-}
-
-#List .list_main article .item .hover{
-	color: #FFF;
-	font-size: 28px;
-	font-size: 2.8rem;
-	font-weight: 600;
-	text-transform: uppercase;
-	width: 100%;
-	height: 100%;
-	background: gray;
-	position: absolute;
-	top: 0;
-	left: 0;
-
-	opacity: 0;
-	display: none\9; /* IE8 */
-
-	-webkit-transition: all 0.5s;
-	-moz-transition: all 0.5s;
-	-ms-transition: all 0.5s;
-	-o-transition: all 0.5s;
-	transition: all 0.5s;
-}
-
-#List.books .list_main article .item .hover{
-	background-image: url(../im/bg-yl_80.png);
-}
-
-#List.authors .list_main article .item .hover{
-	background-image: url(../im/bg-bl_80.png);
-}
-
-#List .list_main article .item:hover .hover{
-	opacity: 1;
-	display: block; /* IE8 */
-}
-
-#List .list_main article .item .hover span{
-	margin: -14px 0 0 -92px;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-}
-
-#List .mix{
+#portfolio .mix{
 	opacity: 0;
 	display: none;
 }
 
-
-
-/*-----MEDIA QUERY CSS-----*/
+/*-----PORTFOLIO SECTION MEDIA QUERY CSS-----*/
 
 @media only screen and (max-width: 960px) {
-	/*-----BLOCK CSS-----*/
 
-	.block{
-		width: 80%;
-	}
+	/*-----portfolio CSS-----*/
 
-	/*-----LIST CSS-----*/
-
-	#List .list_main article{
+	#portfolio .portfolio_main article{
 		width: 30%;
 	}
 }
 
 @media only screen and (max-width: 768px) {
 
-	/*-----LIST CSS-----*/
-	#List .list_main article{
+	/*-----portfolio CSS-----*/
+	#portfolio .portfolio_main article{
 		width: 48%;
 	}
 }
@@ -269,9 +197,9 @@ THEY HAVE IT IS ORIGINALLY THEIRS.-----*/
 }
 
 @media only screen and (max-width: 400px) {
-	/*-----LIST CSS-----*/
+	/*-----portfolio CSS-----*/
 
-	#List .list_main article{
+	#portfolio .portfolio_main article{
 		width: 100%;
 	}
 }
